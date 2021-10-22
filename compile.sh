@@ -1,0 +1,1 @@
+g++ -std=c++11 -O0 -fopenmp -o s hw3.cpp 

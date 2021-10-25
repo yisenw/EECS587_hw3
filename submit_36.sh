@@ -16,5 +16,5 @@
 # (">" redirects the print output of your pfogram,
 # in this case to "output.txt")
 
-g++ -std=c++11 -O0 -fopenmp -o s hw3.cpp
-./s 
+g++ -std=c++11 -O0 -fopenmp -o s_36 hw3.cpp
+./s_36

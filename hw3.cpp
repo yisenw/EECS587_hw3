@@ -10,9 +10,9 @@ using namespace std::chrono;
 int NUM_IT = 100; // TODO: 100 may be changed.
 double MAX = 0;
 
-double g(double t) {
-    return sin(2 * (t-100)) / 4 + 10;
-}
+// double g(double t) {
+//     return sin(2 * (t-100)) / 4 + 10;
+// }
 
 void ini_deque(deque<pair<double, double> >& pairs, double a, double b, int worker_num) {
     double interval = (b - a) / worker_num;
@@ -31,7 +31,7 @@ int main() {
     double a = 1;
     double b = 100;
     double s = 12;
-    double epsilon = 1e-7;
+    double epsilon = 1e-2;
     double min_interval = epsilon / s;
     // cout << "min_interval "<< min_interval << endl;
     deque<pair<double, double> >  pairs;

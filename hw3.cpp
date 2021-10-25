@@ -31,7 +31,7 @@ int main() {
     double a = 1;
     double b = 100;
     double s = 12;
-    double epsilon = 1e-2;
+    double epsilon = 1e-7;
     double min_interval = epsilon / s;
     // cout << "min_interval "<< min_interval << endl;
     deque<pair<double, double> >  pairs;

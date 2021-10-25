@@ -5,7 +5,7 @@
 #SBATCH --job-name=submit
 #SBATCH --mail-type=BEGIN,END
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=18
+#SBATCH --cpus-per-task=18
 #SBATCH --exclusive
 #SBATCH --mem-per-cpu=1g
 #SBATCH --time=00:05:00

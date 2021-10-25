@@ -5,7 +5,7 @@
 #SBATCH --job-name=submit
 #SBATCH --mail-type=BEGIN,END
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=36
+#SBATCH --ntasks-per-node=36
 #SBATCH --exclusive
 #SBATCH --mem-per-cpu=1g
 #SBATCH --time=00:05:00
@@ -16,5 +16,5 @@
 # (">" redirects the print output of your pfogram,
 # in this case to "output.txt")
 
-g++ -std=c++11 -O0 -fopenmp -o s_36 hw3.cpp
-./s_36
+g++ -std=c++11 -O0 -fopenmp -o s hw3.cpp
+OMP_NUM_THREADS=36 ./s

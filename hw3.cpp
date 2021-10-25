@@ -61,7 +61,7 @@ int main() {
             deque<pair<double, double> >  pairs_tmp;
             for (int i = 0; i < num_responsibility; i++) {
                 #pragma omp critical(dataupdate) 
-                { // TODO: may need another way to pick up pairs (take all oaurs together)
+                { // TODO: may need another way to pick up pairs (take all pairs together)
                     if (!pairs.empty()) {
                         pairs_tmp.push_back(pairs.front());
                         pairs.pop_front();

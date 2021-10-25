@@ -2,7 +2,7 @@
 #include <deque>
 #include <chrono>
 #include <cmath>
-// #include "g.h"
+#include "g.h"
 
 using namespace std::chrono;
 using namespace std;
@@ -11,9 +11,9 @@ using namespace std;
 int NUM_IT = 100; // TODO: 100 may be changed.
 double MAX = 0;
 
-double g(double t) {
-    return sin(2 * (t-100)) / 4 + 10;
-}
+// double g(double t) {
+//     return sin(2 * (t-100)) / 4 + 10;
+// }
 
 void ini_deque(deque<pair<pair<double, double>, pair<double, double>> >& pairs, double a, double b, int worker_num) {
     double interval = (b - a) / worker_num;

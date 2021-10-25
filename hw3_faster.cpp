@@ -12,7 +12,7 @@ int NUM_IT = 100; // TODO: 100 may be changed.
 double MAX = 0;
 
 // double g(double t) {
-//     return sin(2 * (t-100)) / 4 + 10;
+//     return cos(3 * (t+100)) / 3 + 9;
 // }
 
 void ini_deque(deque<pair<pair<double, double>, pair<double, double>> >& pairs, double a, double b, int worker_num) {

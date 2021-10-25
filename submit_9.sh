@@ -5,7 +5,7 @@
 #SBATCH --job-name=submit
 #SBATCH --mail-type=BEGIN,END
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=36
+#SBATCH --ntasks-per-node=9
 #SBATCH --exclusive
 #SBATCH --mem-per-cpu=1g
 #SBATCH --time=00:05:00
@@ -17,4 +17,4 @@
 # in this case to "output.txt")
 
 g++ -std=c++11 -O0 -fopenmp -o s hw3.cpp
-./s 
+./s
